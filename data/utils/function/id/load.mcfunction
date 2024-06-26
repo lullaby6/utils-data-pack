@@ -1,3 +1,3 @@
 scoreboard objectives add utils.player.id dummy
 
-scoreboard players set .id utils.player.id 1
+excute unless score .id matches 0.. run scoreboard players set .id utils.player.id 1
