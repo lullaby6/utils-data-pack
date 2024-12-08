@@ -51,3 +51,26 @@ Random TP for voids worlds:
 ```
 /function utils:player/random_tp
 ```
+
+## Predicates
+
+- can/see_sky
+- in/biome/<biome>
+- in/dimension/<dimension> (overworld, the_nether, the_end)
+- in/light/<light_level> (0, 5, 10, 15, 0-5, 5-10, ...)
+- is/baby
+- is/falling
+- is/flying
+- is/ground
+- is/on_fire
+- is/riding
+- is/sneaking
+- is/sprinting
+- is/swimming
+- random/<random_chance> <0.1 (10%), 0.5 (50%), ...>
+
+Example:
+
+```
+/execute as @s if predicate utils:is/on_fire run say I' am on fire D:
+```
