@@ -76,3 +76,21 @@ Example:
 ```
 /execute as @s if predicate utils:is/on_fire run say I am on fire D:
 ```
+
+## Motion
+
+Example:
+
+```
+function utils:motion/calc
+
+execute anchored eyes run summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+
+data modify entity @n[tag=fireball] Owner set from entity @s UUID
+
+execute store result entity @n[tag=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
+execute store result entity @n[tag=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
+execute store result entity @n[tag=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
+
+tag @n[tag=fireball] remove fireball
+```
