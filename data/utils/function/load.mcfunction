@@ -8,3 +8,5 @@ function utils:id/load
 function utils:motion/load
 
 function utils:random_tp/load
+
+function utils:consts
