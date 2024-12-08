@@ -74,5 +74,5 @@ Random TP for voids worlds:
 Example:
 
 ```
-/execute as @s if predicate utils:is/on_fire run say I' am on fire D:
+/execute as @s if predicate utils:is/on_fire run say I am on fire D:
 ```
