@@ -2,6 +2,12 @@
 
 Version: 2
 
+## Table of Contents
+
+- [#commands](Commands)
+- [#predicates](Predicates)
+- [#motion](Motion)
+
 ## Commands
 
 ### Global
