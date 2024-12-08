@@ -55,6 +55,8 @@ Random TP for voids worlds:
 ## Predicates
 
 - can/see_sky
+- has/effect/<effect_name> (speed, regeneration, ...)
+- has/passenger
 - in/biome/<biome_name>
 - in/dimension/<dimension_name> (overworld, the_nether, the_end)
 - in/light/<light_level> (0, 5, 10, 15, 0-5, 5-10, ...)
