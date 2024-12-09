@@ -7,6 +7,8 @@ Version: 2
 - [Commands](#commands)
 - [Predicates](#predicates)
 - [Motion](#motion)
+- [Player Score ID](#player_score_id)
+- [Entitiy Tags](#entity_tags)
 
 ## Commands
 
@@ -101,4 +103,22 @@ execute store result entity @n[tag=fireball] Motion[1] double -0.00025 run score
 execute store result entity @n[tag=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
 
 tag @n[tag=fireball] remove fireball
+```
+
+## Player Score ID
+
+Get the player score ID:
+
+```
+/scoreboard players get @s utils.player.id
+```
+
+## Entity Tags
+
+- team_player
+
+Example:
+
+```
+/effect give @e[type=#utils:team_player] glowing 1 0
 ```
