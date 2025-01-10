@@ -1,14 +1,6 @@
-# Utils Data-Pack
+# Utils
 
 Version: 2
-
-## Table of Contents
-
-- [Commands](#commands)
-- [Predicates](#predicates)
-- [Motion](#motion)
-- [Player Score ID](#player_score_id)
-- [Entitiy Tags](#entity_tags)
 
 ## Commands
 
@@ -16,13 +8,13 @@ Version: 2
 
 Clear chat for all players:
 
-```
+```mcfunction
 /function utils:global/clear_chat
 ```
 
 Hide sidebar:
 
-```
+```mcfunction
 /function utils:global/hide_sidebar
 ```
 
@@ -30,13 +22,13 @@ Hide sidebar:
 
 Despawn an entity/mob:
 
-```
+```mcfunction
 /execute as @n[type=zombie] run function utils:entity/despawn
 ```
 
 Reset entity/mob/player all attributes:
 
-```
+```mcfunction
 /execute as @n[type=zombie] run function utils:entity/reset_all_attributes
 ```
 
@@ -44,19 +36,19 @@ Reset entity/mob/player all attributes:
 
 Clear chat for player:
 
-```
+```mcfunction
 /function utils:player/clear_chat
 ```
 
 Reset XP (points and levels):
 
-```
+```mcfunction
 /function utils:player/reset_xp
 ```
 
 Random TP for voids worlds:
 
-```
+```mcfunction
 /function utils:player/random_tp
 ```
 
@@ -83,7 +75,7 @@ Random TP for voids worlds:
 
 Example:
 
-```
+```mcfunction
 /execute as @s if predicate utils:is/on_fire run say I am on fire D:
 ```
 
@@ -109,7 +101,7 @@ tag @n[tag=fireball] remove fireball
 
 Get the player score ID:
 
-```
+```mcfunction
 /scoreboard players get @s utils.player.id
 ```
 
@@ -119,6 +111,40 @@ Get the player score ID:
 
 Example:
 
-```
+```mcfunction
 /effect give @e[type=#utils:team_player] glowing 1 0
 ```
+
+## Consts
+
+List of consts:
+- 1000
+- 750
+- 500
+- 300
+- 250
+- 200
+- 100
+- 75
+- 50
+- 25
+- 20
+- 10
+- 9
+- 8
+- 7
+- 6
+- 5
+- 4
+- 2
+- 1
+
+Usage example:
+
+```mcfunction
+/scoreboard players get 1 utils.const
+```
+
+## License
+
+MIT
