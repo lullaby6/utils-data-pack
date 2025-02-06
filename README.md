@@ -40,6 +40,12 @@ Remove fire from entity:
 /execute as @n[type=zombie] run function utils:entity/remove_fire
 ```
 
+Heal full:
+
+```mcfunction
+/execute as @n[type=iron_golem] run function utils:entity/heal_full
+```
+
 ### Player
 
 Clear chat for player:
