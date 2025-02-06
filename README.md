@@ -34,6 +34,12 @@ Reset entity/mob/player all attributes:
 /execute as @n[type=zombie] run function utils:entity/reset_all_attributes
 ```
 
+Remove fire from entity:
+
+```mcfunction
+/execute as @n[type=zombie] run function utils:entity/remove_fire
+```
+
 ### Player
 
 Clear chat for player:
@@ -115,6 +121,26 @@ Example:
 
 ```mcfunction
 /effect give @e[type=#utils:team_player] glowing 1 0
+```
+
+## Custom Entity Tags
+
+The `utils.entity.fire_inmunity` tag:
+
+```mcfunction
+/summon zombie ~ ~ ~ {Tags:["utils.entity.fire_inmunity"]}
+```
+
+The score tags:
+
+- utils.entity.hurt_time
+- utils.entity.fire
+- utils.entity.health
+
+```mcfunction
+/summon zombie ~ ~ ~ {Tags:["utils.entity.hurt_time"]}
+
+/execute as @e if score @s utils.entity.hurt_time matches 1.. run say auch
 ```
 
 ## Consts
