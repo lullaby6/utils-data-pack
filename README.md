@@ -57,8 +57,16 @@ Clear chat for player:
 Reset XP (points and levels):
 
 ```mcfunction
-/function utils:player/reset_xp
+/function utils:player/xp/reset
 ```
+
+Get all XP Points:
+
+```mcfunction
+/function utils:player/xp/get_all_points
+```
+
+The function return the all xp points and they are saved in the score `utils.player.xp.total_points`
 
 Random TP for voids worlds:
 
