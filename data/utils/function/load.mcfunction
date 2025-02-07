@@ -1,7 +1,7 @@
 scoreboard objectives add utils.config dummy
 
 scoreboard players set load utils.config 1
-scoreboard players set version utils.config 2
+scoreboard players set version utils.config 3
 
 scoreboard objectives add utils.player.xp.points dummy
 scoreboard objectives add utils.player.xp.levels dummy
