@@ -1,8 +1,8 @@
 # Utils
 
-DP Version: 3
+DP Version: `3`
 
-MC Version: 1.21.X
+MC Version: `1.21.X`
 
 ## Commands
 
