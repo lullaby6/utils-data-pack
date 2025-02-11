@@ -103,9 +103,7 @@ Example:
 
 ## Motion
 
-Example:
-
-```
+```mcfunction
 function utils:motion/calc
 
 execute anchored eyes run summon fireball ^ ^ ^.5 {Tags:["fireball"]}
