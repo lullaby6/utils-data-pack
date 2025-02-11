@@ -164,6 +164,18 @@ Get the player score ID:
 
 ## Entity Tags
 
+- arthropods
+- end
+- flyers
+- nether
+- piglins
+- proyectiles
+- rideable_animal
+- rideable
+- tameable
+- undead
+- villager_enemies
+- zombies
 - team_player
 
 Example:
