@@ -117,6 +117,19 @@ execute store result entity @n[tag=fireball] Motion[2] double -0.00025 run score
 tag @n[tag=fireball] remove fireball
 ```
 
+or you can use the Storage and Macro method:
+
+```mcfunction
+function utils:motion/storage {"value":"-0.00025"}
+
+execute anchored eyes run summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+
+data modify entity @n[tag=fireball] Owner set from entity @s UUID
+data modify entity @n[tag=fireball] Motion set from storage utils:motion motion
+
+tag @n[tag=fireball] remove fireball
+```
+
 ## Player Score ID
 
 Get the player score ID:

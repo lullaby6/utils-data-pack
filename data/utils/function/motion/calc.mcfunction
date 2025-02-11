@@ -34,3 +34,8 @@ scoreboard players operation @s utils.motion.mz = @s utils.motion.z
 scoreboard players operation @s utils.motion.mz -= @s utils.motion.z2
 
 kill @n[tag=utils.motion.area_effect_cloud]
+
+data modify storage utils:motion motion set value [0.0, 0.0, 0.0]
+execute store result storage utils:motion motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
+execute store result storage utils:motion motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
+execute store result storage utils:motion motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
