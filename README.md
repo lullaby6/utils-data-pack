@@ -106,15 +106,11 @@ Example:
 ```mcfunction
 function utils:motion/calc
 
-execute anchored eyes run summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+summon fireball ^ ^ ^.5 {Tags:["fireball"]}
 
-data modify entity @n[tag=fireball] Owner set from entity @s UUID
-
-execute store result entity @n[tag=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
-execute store result entity @n[tag=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
-execute store result entity @n[tag=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
-
-tag @n[tag=fireball] remove fireball
+execute store result entity @n[type=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
+execute store result entity @n[type=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
+execute store result entity @n[type=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
 ```
 
 or you can use the Storage and Macro method:
@@ -122,12 +118,9 @@ or you can use the Storage and Macro method:
 ```mcfunction
 function utils:motion/storage {"value":"-0.00025"}
 
-execute anchored eyes run summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+summon fireball ^ ^ ^.5 {Tags:["fireball"]}
 
-data modify entity @n[tag=fireball] Owner set from entity @s UUID
-data modify entity @n[tag=fireball] Motion set from storage utils:motion motion
-
-tag @n[tag=fireball] remove fireball
+data modify entity @n[type=fireball] Motion set from storage utils:motion motion
 ```
 
 ## Player Score ID
