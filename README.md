@@ -79,7 +79,7 @@ Random TP for voids worlds:
 ```mcfunction
 function utils:motion/calc
 
-summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+summon fireball ^ ^ ^.5
 
 execute store result entity @n[type=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
 execute store result entity @n[type=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
@@ -91,7 +91,7 @@ or you can use the Storage and Macro method:
 ```mcfunction
 function utils:motion/storage {"value":"-0.00025"}
 
-summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+summon fireball ^ ^ ^.5
 
 data modify entity @n[type=fireball] Motion set from storage utils:motion motion
 ```

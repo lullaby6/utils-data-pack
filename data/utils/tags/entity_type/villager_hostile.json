@@ -2,6 +2,8 @@
     "replace": false,
     "values": [
         "#minecraft:raiders",
+        "minecraft:wither",
+        "minecraft:ender_dragon",
         "minecraft:zoglin",
         "minecraft:drowned",
         "minecraft:zombie",
