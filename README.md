@@ -166,6 +166,7 @@ Get the player score ID:
 
 - arthropods
 - end
+- flyers_hostile
 - flyers
 - nether
 - piglins
