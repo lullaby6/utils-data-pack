@@ -139,27 +139,14 @@ Example:
 
 ## Consts
 
-List of consts:
-- 1000
-- 750
-- 500
-- 300
-- 250
-- 200
-- 100
-- 75
-- 50
-- 25
-- 20
-- 10
-- 9
-- 8
-- 7
-- 6
-- 5
-- 4
-- 2
-- 1
+There are constants from 0 to 1000.
+
+You can check and get the const value running this command:
+
+```mcfunction
+/scoreboard players get <number> utils.const
+```
+
 
 Usage example:
 

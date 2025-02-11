@@ -1,8 +1,6 @@
 function utils:settings/load
 
-scoreboard objectives add utils.player.xp.points dummy
-scoreboard objectives add utils.player.xp.levels dummy
-scoreboard objectives add utils.player.xp.total_points dummy
+function utils:player/load
 
 function utils:id/load
 
