@@ -1,6 +1,6 @@
 # Utils
 
-DP Version: `3`
+DP Version: `4`
 
 MC Version: `1.21.X`
 
@@ -74,6 +74,28 @@ Random TP for voids worlds:
 /function utils:player/random_tp
 ```
 
+## Motion
+
+```mcfunction
+function utils:motion/calc
+
+summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+
+execute store result entity @n[type=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
+execute store result entity @n[type=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
+execute store result entity @n[type=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
+```
+
+or you can use the Storage and Macro method:
+
+```mcfunction
+function utils:motion/storage {"value":"-0.00025"}
+
+summon fireball ^ ^ ^.5 {Tags:["fireball"]}
+
+data modify entity @n[type=fireball] Motion set from storage utils:motion motion
+```
+
 ## Predicates
 
 - can/see_sky
@@ -101,26 +123,35 @@ Example:
 /execute as @s if predicate utils:is/on_fire run say I am on fire D:
 ```
 
-## Motion
+## Item Modifiers
+
+- count
+    - count/add/<amount>
+    - count/remove/<amount>
+    - count/set/<amount>
+- enchantment_glint_override/<boolean>
+- rarity/<rarity_name>
+- tooltip/<tooltip_name>/<show | hide>
+- use_cooldown/<tine> (1s, 1m, 1h, etc...)
+- clear_bundle
+- clear_container
+- death_protection
+- enchant_randomly_compatible
+- enchant_randomly
+- furnace_smelt
+- glider
+- hide_additional_tooltip
+- hide_tooltip
+- non_consumable
+- one_use
+- remove_container_loot
+- repair
+- unbrekeable
+
+Example:
 
 ```mcfunction
-function utils:motion/calc
-
-summon fireball ^ ^ ^.5 {Tags:["fireball"]}
-
-execute store result entity @n[type=fireball] Motion[0] double -0.00025 run scoreboard players get @s utils.motion.mx
-execute store result entity @n[type=fireball] Motion[1] double -0.00025 run scoreboard players get @s utils.motion.my
-execute store result entity @n[type=fireball] Motion[2] double -0.00025 run scoreboard players get @s utils.motion.mz
-```
-
-or you can use the Storage and Macro method:
-
-```mcfunction
-function utils:motion/storage {"value":"-0.00025"}
-
-summon fireball ^ ^ ^.5 {Tags:["fireball"]}
-
-data modify entity @n[type=fireball] Motion set from storage utils:motion motion
+/execute if items entity @s weapon.mainhand minecraft:raw_iron run item modify entity @s weapon.mainhand utils:furnace_smelt
 ```
 
 ## Player Score ID
