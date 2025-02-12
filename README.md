@@ -201,9 +201,9 @@ Example:
 ## Item Modifiers
 
 - count
-    - count/add/<amount>
-    - count/remove/<amount>
-    - count/set/<amount>
+    - count/add/<number>
+    - count/remove/<number>
+    - count/set/<number>
 - enchantment_glint_override/<boolean>
 - rarity/<rarity_name>
 - tooltip/<tooltip_name>/<show | hide>
