@@ -201,13 +201,13 @@ Example:
 ## Item Modifiers
 
 - count
-    - count/add/<number>
-    - count/remove/<number>
-    - count/set/<number>
-- enchantment_glint_override/<boolean>
+    - count/add/<count_number>
+    - count/remove/<count_number>
+    - count/set/<count_number>
+- enchantment_glint_override/<true | false>
 - rarity/<rarity_name>
 - tooltip/<tooltip_name>/<show | hide>
-- use_cooldown/<tine> (1s, 1m, 1h, etc...)
+- use_cooldown/<cooldown_tine> (1s, 1m, 1h, etc...)
 - clear_bundle
 - clear_container
 - death_protection
