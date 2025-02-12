@@ -6,7 +6,7 @@ $data modify storage utils:storage storage set value "$(storage)"
 $data modify storage utils:storage function set value "$(function)"
 $data modify storage utils:storage path set value "$(path)"
 
-function utils:player/storage/macro/function with storage utils:storage
+function utils:player/storage/macro/function/index with storage utils:storage
 
 data remove storage utils:storage 0
 data remove storage utils:storage 1
