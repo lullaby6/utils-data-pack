@@ -177,6 +177,7 @@ Get the player score ID:
 - has/effect/`<effect_name>` (speed, regeneration, ...)
 - has/passenger
 - in/biome/`<biome_name>`
+- in/structure/`<structure_name>` (village, desert_pyramid, trial_chambers, etc...)
 - in/dimension/`<dimension_name>` (overworld, the_nether, the_end)
 - in/light/`<level>` (0, 5, 10, 15, 0-5, 5-10, ...)
 - is/raining
