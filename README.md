@@ -248,7 +248,7 @@ Usage example:
 ### Run function with Player's data
 
 ```mcfunction
-/function utils:player/storage/function {"path":"lives","function":"namespace:say_lives"}
+/function utils:player/storage/function {"function":"namespace:say_lives"}
 ```
 
 say_lives.mcfunction:
