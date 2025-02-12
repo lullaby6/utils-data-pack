@@ -5,7 +5,7 @@ execute store result storage utils:storage 3 int 1 run scoreboard players get @s
 $data modify storage utils:storage storage set value "$(storage)"
 $data modify storage utils:storage path set value "$(path)"
 
-function utils:player/storage/macro/remove with storage utils:storage
+function utils:player/storage/macro/remove/value with storage utils:storage
 
 data remove storage utils:storage 0
 data remove storage utils:storage 1
