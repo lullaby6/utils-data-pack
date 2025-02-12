@@ -177,7 +177,7 @@ Get the player score ID:
 - has/effect/`<effect_name>` (speed, regeneration, ...)
 - has/passenger
 - in/biome/`<biome_name>`
-- in/structure/`<structure_name>` (village, desert_pyramid, trial_chambers, etc...)
+- in/structure/`<structure_name>` (village, desert_pyramid, trial_chambers, ...)
 - in/dimension/`<dimension_name>` (overworld, the_nether, the_end)
 - in/light/`<level>` (0, 5, 10, 15, 0-5, 5-10, ...)
 - is/raining
@@ -208,10 +208,10 @@ Example:
 - enchantment_glint_override/`<boolean>`
 - max_stack_size/`<number>`
 - rarity/`<rarity_name>`
-- remove_component/`<item_component_name>` (use_cooldown, enchantments, max_stack_size, etc...)
+- remove_component/`<item_component_name>` (use_cooldown, enchantments, max_stack_size, ...)
 - repair_cost/`<number>`
 - tooltip/`<tooltip_name>`/`<show | hide>`
-- use_cooldown/`<time>` (1s, 1m, 1h, etc...)
+- use_cooldown/`<time>` (1s, 2s, 1m, 1h, ...)
 - clear_bundle
 - clear_container
 - death_protection
