@@ -6,10 +6,8 @@ MC Version: `1.21.X`
 
 ## Features
 
-- Global Commands
-- Entity Commands
-- Player Commands
-- Motion Entity in Direction
+- Global, Entity and Player Functions
+- Motion Entity in Facing Direction
 - Player Data Storage
 - Consts Scores
 - Player Score ID
