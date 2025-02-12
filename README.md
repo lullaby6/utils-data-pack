@@ -205,7 +205,10 @@ Example:
     - count/remove/`<number>`
     - count/set/`<number>`
 - enchantment_glint_override/`<boolean>`
+- max_stack_size/`<number>`
 - rarity/`<rarity_name>`
+- remove_component/`<item_component_name>` (use_cooldown, enchantments, max_stack_size, etc...)
+- repair_cost/`<number>`
 - tooltip/`<tooltip_name>`/`<show | hide>`
 - use_cooldown/`<time>` (1s, 1m, 1h, etc...)
 - clear_bundle
