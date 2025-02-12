@@ -201,7 +201,7 @@ Example:
 ## Item Modifiers
 
 - count
-    - count/add/<count_number>
+    - count/add/`<number>`
     - count/remove/<count_number>
     - count/set/<count_number>
 - enchantment_glint_override/<true | false>
