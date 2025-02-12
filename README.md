@@ -267,8 +267,11 @@ $say $(lives)
 ### Remove data
 
 ```mcfunction
+# absolute
 /function utils:player/storage/remove/data {"path":"lives"}
 /function utils:player/storage/remove/data {"path":"name"}
+
+# array
 /function utils:player/storage/remove/first {"path":"deaths"}
 /function utils:player/storage/remove/index {"path":"deaths","index":1}
 ```
