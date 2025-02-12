@@ -1,1 +1,1 @@
-$data modify storage $(storage) "$(0) $(1) $(2) $(3)" set value "$(value)"
+$data modify storage $(storage) "$(0) $(1) $(2) $(3)".$(path) set value "$(value)"
