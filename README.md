@@ -245,13 +245,15 @@ and for `append`, the path will be an array, and will append the data arg.
 /function utils:player/storage/set {"path":"lives","data":3}
 /function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
 
-# arrays
+# array
 /function utils:player/storage/append {"path":"deaths","data":1}
 /function utils:player/storage/append {"path":"deaths","data":2}
 /function utils:player/storage/append {"path":"deaths","data":3}
 ```
 
 ### Run function with Player's data
+
+When you use the `player/storage/function` all data/args from player's storage will be received to the function like macro args.
 
 ```mcfunction
 /function utils:player/storage/function {"function":"namespace:say_lives"}
