@@ -165,14 +165,17 @@ Get the player score ID:
 ## Entity Tags
 
 - arthropods
+- bosses
 - end
 - flyers_hostile
 - flyers
+- hostile
 - nether
 - piglins
 - proyectiles
 - rideable_animal
 - rideable
+- slimes
 - tameable
 - undead
 - villager_enemies
