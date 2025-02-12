@@ -49,12 +49,6 @@ Reset entity/mob/player all attributes:
 /execute as @n[type=zombie] run function utils:entity/reset_all_attributes
 ```
 
-Remove fire from entity:
-
-```mcfunction
-/execute as @n[type=zombie] run function utils:entity/remove_fire
-```
-
 Heal full:
 
 ```mcfunction
