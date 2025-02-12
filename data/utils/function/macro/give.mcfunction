@@ -1,1 +1,1 @@
-$give $(selector) $(id) $(count)
+$give $(selector) $(item) $(count)
