@@ -6,6 +6,7 @@
         "#utils:zombies",
         "#utils:bosses",
         "#utils:slimes",
+        "minecraft:vex",
         "minecraft:blaze",
         "minecraft:breeze",
         "minecraft:creaking",

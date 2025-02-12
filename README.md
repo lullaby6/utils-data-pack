@@ -244,7 +244,7 @@ Example:
 - cows
 - end
 - fishs
-- flyers_hostile
+- flyers_hostiles
 - flyers
 - horses
 - hostiles
