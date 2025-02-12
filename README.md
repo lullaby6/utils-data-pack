@@ -227,11 +227,42 @@ You can check and get the const value running this command:
 /scoreboard players get <number> utils.const
 ```
 
-
 Usage example:
 
 ```mcfunction
 /scoreboard players get 1 utils.const
+```
+
+## Player Data Storage
+
+### Create data
+
+```mcfunction
+/function utils:player/storage/set {"path":"lives","data":3}
+/function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
+/function utils:player/storage/append {"path":"deaths","data":1}
+/function utils:player/storage/append {"path":"deaths","data":2}
+/function utils:player/storage/append {"path":"deaths","data":3}
+```
+
+### Run function with Player's data
+
+```mcfunction
+/function utils:player/storage/function {"path":"lives","function":"namespace:say_lives"}
+```
+
+say_lives.mcfunction:
+```mcfunction
+$say $(lives)
+```
+
+### Remove data
+
+```mcfunction
+/function utils:player/storage/remove/data {"path":"lives"}
+/function utils:player/storage/remove/data {"path":"name"}
+/function utils:player/storage/remove/first {"path":"deaths"}
+/function utils:player/storage/remove/index {"path":"deaths","index":1}
 ```
 
 ## License

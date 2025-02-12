@@ -1,0 +1,1 @@
+execute as @a unless score @s utils.player.id matches 1.. run function utils:player/id/new

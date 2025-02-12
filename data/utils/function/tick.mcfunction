@@ -1,4 +1,4 @@
-function utils:id/tick
+function utils:player/id/tick
 
 tag @e[type=#utils:team_player] add utils.team_player
 tag @a[gamemode=creative] remove utils.team_player

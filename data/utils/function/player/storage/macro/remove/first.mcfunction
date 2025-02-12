@@ -1,1 +1,1 @@
-$data remove storage $(storage) "$(0) $(1) $(2) $(3)".$(path)[0]
+$data remove storage utils:db "$(0) $(1) $(2) $(3)".$(path)[0]
