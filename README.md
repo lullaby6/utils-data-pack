@@ -259,7 +259,8 @@ When you use the `player/storage/function` all data/args from player's storage w
 /function utils:player/storage/function {"function":"namespace:say_lives"}
 ```
 
-say_lives.mcfunction:
+`say_lives.mcfunction` file:
+
 ```mcfunction
 $say $(lives)
 ```
