@@ -237,6 +237,9 @@ Usage example:
 
 ### Create data
 
+Exist two ways to create or add data to a path, `set` and `append`, when you use `set`, the absolute value of the path will be the `data` arg,
+and for `append`, the path will be an array, and will append the data arg.
+
 ```mcfunction
 /function utils:player/storage/set {"path":"lives","data":3}
 /function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
