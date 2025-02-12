@@ -110,6 +110,74 @@ summon fireball ^ ^ ^.5
 data modify entity @n[type=fireball] Motion set from storage utils:motion motion
 ```
 
+## Player Data Storage
+
+### Create data
+
+Exist two ways to create or add data to a path, `set` and `append`, when you use `set`, the absolute value of the path will be the `data` arg,
+and for `append`, the path will be an array, and will append the data arg.
+
+```mcfunction
+# absolute
+/function utils:player/storage/set {"path":"lives","data":3}
+/function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
+
+# array
+/function utils:player/storage/append {"path":"deaths","data":1}
+/function utils:player/storage/append {"path":"deaths","data":2}
+/function utils:player/storage/append {"path":"deaths","data":3}
+```
+
+### Run function with Player's data
+
+When you use the `player/storage/function` all data/args from player's storage will be received to the function like macro args.
+
+```mcfunction
+/function utils:player/storage/function {"function":"namespace:say_lives"}
+```
+
+`say_lives.mcfunction` file:
+
+```mcfunction
+$say $(lives)
+```
+
+### Remove data
+
+```mcfunction
+# absolute
+/function utils:player/storage/remove/data {"path":"lives"}
+/function utils:player/storage/remove/data {"path":"name"}
+
+# array
+/function utils:player/storage/remove/first {"path":"deaths"}
+/function utils:player/storage/remove/index {"path":"deaths","index":1}
+```
+
+## Consts
+
+There are constants from 0 to 1000.
+
+You can check and get the const value running this command:
+
+```mcfunction
+/scoreboard players get <number> utils.const
+```
+
+Usage example:
+
+```mcfunction
+/scoreboard players get 1 utils.const
+```
+
+## Player Score ID
+
+Get the player score ID:
+
+```mcfunction
+/scoreboard players get @s utils.player.id
+```
+
 ## Predicates
 
 - can/see_sky
@@ -168,14 +236,6 @@ Example:
 /execute if items entity @s weapon.mainhand minecraft:raw_iron run item modify entity @s weapon.mainhand utils:furnace_smelt
 ```
 
-## Player Score ID
-
-Get the player score ID:
-
-```mcfunction
-/scoreboard players get @s utils.player.id
-```
-
 ## Entity Tags
 
 - animals
@@ -215,66 +275,6 @@ Example:
 
 ```mcfunction
 /effect give @e[type=#utils:team_player] glowing 1 0
-```
-
-## Consts
-
-There are constants from 0 to 1000.
-
-You can check and get the const value running this command:
-
-```mcfunction
-/scoreboard players get <number> utils.const
-```
-
-Usage example:
-
-```mcfunction
-/scoreboard players get 1 utils.const
-```
-
-## Player Data Storage
-
-### Create data
-
-Exist two ways to create or add data to a path, `set` and `append`, when you use `set`, the absolute value of the path will be the `data` arg,
-and for `append`, the path will be an array, and will append the data arg.
-
-```mcfunction
-# absolute
-/function utils:player/storage/set {"path":"lives","data":3}
-/function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
-
-# array
-/function utils:player/storage/append {"path":"deaths","data":1}
-/function utils:player/storage/append {"path":"deaths","data":2}
-/function utils:player/storage/append {"path":"deaths","data":3}
-```
-
-### Run function with Player's data
-
-When you use the `player/storage/function` all data/args from player's storage will be received to the function like macro args.
-
-```mcfunction
-/function utils:player/storage/function {"function":"namespace:say_lives"}
-```
-
-`say_lives.mcfunction` file:
-
-```mcfunction
-$say $(lives)
-```
-
-### Remove data
-
-```mcfunction
-# absolute
-/function utils:player/storage/remove/data {"path":"lives"}
-/function utils:player/storage/remove/data {"path":"name"}
-
-# array
-/function utils:player/storage/remove/first {"path":"deaths"}
-/function utils:player/storage/remove/index {"path":"deaths","index":1}
 ```
 
 ## License
