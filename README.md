@@ -174,11 +174,11 @@ Get the player score ID:
 ## Predicates
 
 - can/see_sky
-- has/effect/<effect_name> (speed, regeneration, ...)
+- has/effect/`<effect_name>` (speed, regeneration, ...)
 - has/passenger
-- in/biome/<biome_name>
-- in/dimension/<dimension_name> (overworld, the_nether, the_end)
-- in/light/<light_level> (0, 5, 10, 15, 0-5, 5-10, ...)
+- in/biome/`<biome_name>`
+- in/dimension/`<dimension_name>` (overworld, the_nether, the_end)
+- in/light/`<level>` (0, 5, 10, 15, 0-5, 5-10, ...)
 - is/raining
 - is/thundering
 - is/baby
@@ -190,7 +190,7 @@ Get the player score ID:
 - is/sneaking
 - is/sprinting
 - is/swimming
-- random/<random_chance> <0.1 (10%), 0.5 (50%), ...>
+- random/`<chance>` <0.1 (10%), 0.5 (50%), ...>
 
 Example:
 
@@ -202,12 +202,12 @@ Example:
 
 - count
     - count/add/`<number>`
-    - count/remove/<count_number>
-    - count/set/<count_number>
-- enchantment_glint_override/<true | false>
-- rarity/<rarity_name>
-- tooltip/<tooltip_name>/<show | hide>
-- use_cooldown/<cooldown_tine> (1s, 1m, 1h, etc...)
+    - count/remove/`<number>`
+    - count/set/`<number>`
+- enchantment_glint_override/`<boolean>`
+- rarity/`<rarity_name>`
+- tooltip/`<tooltip_name>`/`<show | hide>`
+- use_cooldown/`<time>` (1s, 1m, 1h, etc...)
 - clear_bundle
 - clear_container
 - death_protection
