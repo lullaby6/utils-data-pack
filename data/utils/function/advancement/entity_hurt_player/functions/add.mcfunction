@@ -1,0 +1,1 @@
+$data modify storage utils:advancement entity_hurt_player append value "$(function)"

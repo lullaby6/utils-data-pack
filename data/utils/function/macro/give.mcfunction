@@ -1,0 +1,1 @@
+$give $(selector) $(id) $(count)
