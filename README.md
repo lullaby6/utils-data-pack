@@ -242,11 +242,11 @@ Example:
 - fishs
 - flyers_hostile
 - flyers
+- horses
 - hostiles
 - humanoids
 - illagers
 - monsters
-- insects
 - nether
 - neutrals
 - passives
