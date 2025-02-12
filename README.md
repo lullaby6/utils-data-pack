@@ -164,22 +164,37 @@ Get the player score ID:
 
 ## Entity Tags
 
+- animals
+- aquatics_animals
+- aquatics_real_animals
+- aquatics
 - arthropods
 - bosses
+- cows
 - end
+- fishs
 - flyers_hostile
 - flyers
-- hostile
+- hostiles
+- humanoids
+- illagers
+- monsters
+- insects
 - nether
+- neutrals
+- passives
 - piglins
 - proyectiles
-- rideable_animal
-- rideable
+- real_animals
+- rideables_animals
+- rideables
 - slimes
-- tameable
+- spiders
+- tameables
 - undead
-- villager_enemies
-- zombies
+- villagers_hostiles
+- villagers
+- zombiess
 - team_player
 
 Example:
