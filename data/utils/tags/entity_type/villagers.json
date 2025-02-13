@@ -1,7 +1,7 @@
 {
     "replace": false,
     "values": [
-        "minecraft:villger",
+        "minecraft:villager",
         "minecraft:wandering_trader"
     ]
 }

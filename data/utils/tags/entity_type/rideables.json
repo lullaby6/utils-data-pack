@@ -1,5 +1,6 @@
 {
     "values": [
+        "#utils:all_boats",
         "minecraft:horse",
         "minecraft:donkey",
         "minecraft:mule",

@@ -235,11 +235,14 @@ Example:
 
 ## Entity Tags
 
+- all_boats
 - animals
 - aquatics_animals
 - aquatics_real_animals
 - aquatics
 - arthropods
+- boats_with_chest
+- boats
 - bosses
 - cows
 - end
