@@ -1,1 +1,1 @@
-$function $(function)
+$return run function $(function)

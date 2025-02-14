@@ -212,6 +212,9 @@ Example:
 - repair_cost/`<number>`
 - tooltip/`<tooltip_name>`/`<show | hide>`
 - use_cooldown/`<time>` (1s, 2s, 1m, 1h, ...)
+- damage
+    - damage/add/0.`<number>`
+    - damage/set/0.`<number>`
 - clear_bundle
 - clear_container
 - death_protection
