@@ -168,7 +168,7 @@ Usage example:
 
 ### Get array length
 
-The function `utils:storage/length/get` returns the array of the storage and path get received, and also store the array length in the score `utils.storage.length` with the path argument as "player"
+The function `utils:storage/length/get` returns the array of the storage and path get received, and also store the array length in the score `utils.storage.length` with the path argument as "player".
 
 ```mcfunction
 /function utils:storage/length/get {"storage":"<storage>","path":"<path>"}
