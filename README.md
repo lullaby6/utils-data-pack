@@ -9,6 +9,7 @@ MC Version: `1.21.X`
 - Global, Entity and Player Functions
 - Motion Entity in Facing Direction
 - Player Data Storage
+- Storage Functions
 - Consts Scores
 - Player Score ID
 - Predicates
@@ -161,6 +162,16 @@ Usage example:
 
 ```mcfunction
 /scoreboard players get 1 utils.const
+```
+
+## Storage Functions
+
+### Get array length
+
+The function `utils:storage/length/get` returns the array of the storage and path get received, and also store the array length in the score `utils.storage.length` with the path argument as "player"
+
+```mcfunction
+/function utils:storage/length/get {"storage":"<storage>","path":"<path>"}
 ```
 
 ## Player Score ID
