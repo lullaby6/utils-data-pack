@@ -9,8 +9,6 @@
         "minecraft:strider",
         "minecraft:skeleton_horse",
         "minecraft:zombie_horse",
-        "minecraft:minecart",
-        "minecraft:boat",
-        "minecraft:boat_with_chest"
+        "minecraft:minecart"
     ]
 }
