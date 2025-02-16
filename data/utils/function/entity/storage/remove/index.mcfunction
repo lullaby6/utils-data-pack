@@ -1,7 +1,7 @@
-execute store result storage utils:storage 0 int 1 run scoreboard players get @s utils.player.uuid.0
-execute store result storage utils:storage 1 int 1 run scoreboard players get @s utils.player.uuid.1
-execute store result storage utils:storage 2 int 1 run scoreboard players get @s utils.player.uuid.2
-execute store result storage utils:storage 3 int 1 run scoreboard players get @s utils.player.uuid.3
+data modify storage utils:storage 0 set from entity @s UUID[0]
+data modify storage utils:storage 1 set from entity @s UUID[1]
+data modify storage utils:storage 2 set from entity @s UUID[2]
+data modify storage utils:storage 3 set from entity @s UUID[3]
 $data modify storage utils:storage path set value "$(path)"
 $data modify storage utils:storage index set value "$(index)"
 

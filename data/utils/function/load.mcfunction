@@ -9,3 +9,5 @@ function utils:motion/load
 function utils:random_tp/load
 
 function utils:consts
+
+function utils:entity/storage/load
