@@ -1,6 +1,6 @@
 # Utils
 
-DP Version: `4`
+DP Version: `5`
 
 MC Version: `1.21.X`
 
@@ -8,7 +8,7 @@ MC Version: `1.21.X`
 
 - Global, Entity and Player Functions
 - Motion Entity in Facing Direction
-- Player Data Storage
+- Data Storage by UUID
 - Consts Scores
 - Player Score ID
 - Predicates
@@ -103,7 +103,7 @@ summon fireball ^ ^ ^.5
 data modify entity @n[type=fireball] Motion set from storage utils:motion motion
 ```
 
-## Player Data Storage
+## Data Storage by UUID
 
 ### Create data
 
@@ -112,21 +112,21 @@ and for `append`, the path will be an array, and will append the data arg.
 
 ```mcfunction
 # absolute
-/function utils:player/storage/set {"path":"lives","data":3}
-/function utils:player/storage/set {"path":"name","data":'"lullaby6"'}
+/function utils:entity/storage/set {"path":"lives","data":3}
+/function utils:entity/storage/set {"path":"name","data":'"lullaby6"'}
 
 # array
-/function utils:player/storage/append {"path":"deaths","data":1}
-/function utils:player/storage/append {"path":"deaths","data":2}
-/function utils:player/storage/append {"path":"deaths","data":3}
+/function utils:entity/storage/append {"path":"deaths","data":1}
+/function utils:entity/storage/append {"path":"deaths","data":2}
+/function utils:entity/storage/append {"path":"deaths","data":3}
 ```
 
-### Run function with Player's data
+### Run function with Entity's data
 
-When you use the `player/storage/function` all data/args from player's storage will be received to the function like macro args.
+When you use the `entity/storage/function` all data/args from entity's storage will be received to the function like macro args.
 
 ```mcfunction
-/function utils:player/storage/function {"function":"namespace:say_lives"}
+/function utils:entity/storage/function {"function":"namespace:say_lives"}
 ```
 
 `say_lives.mcfunction` file:
@@ -139,12 +139,12 @@ $say $(lives)
 
 ```mcfunction
 # absolute
-/function utils:player/storage/remove/data {"path":"lives"}
-/function utils:player/storage/remove/data {"path":"name"}
+/function utils:entity/storage/remove/data {"path":"lives"}
+/function utils:entity/storage/remove/data {"path":"name"}
 
 # array
-/function utils:player/storage/remove/first {"path":"deaths"}
-/function utils:player/storage/remove/index {"path":"deaths","index":1}
+/function utils:entity/storage/remove/first {"path":"deaths"}
+/function utils:entity/storage/remove/index {"path":"deaths","index":1}
 ```
 
 ## Consts

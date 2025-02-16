@@ -5,7 +5,7 @@ data modify storage utils:storage 3 set from entity @s UUID[3]
 $data modify storage utils:storage path set value "$(path)"
 $data modify storage utils:storage data set value $(data)
 
-function utils:player/storage/macro/append with storage utils:storage
+function utils:entity/storage/macro/append with storage utils:storage
 
 data remove storage utils:storage 0
 data remove storage utils:storage 1
