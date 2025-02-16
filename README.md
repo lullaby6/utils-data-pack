@@ -8,7 +8,7 @@ MC Version: `1.21.X`
 
 - Global, Entity and Player Functions
 - Motion Entity in Facing Direction
-- Data Storage by UUID
+- Data Storage by Entity
 - Consts Scores
 - Player Score ID
 - Predicates
@@ -103,7 +103,7 @@ summon fireball ^ ^ ^.5
 data modify entity @n[type=fireball] Motion set from storage utils:motion motion
 ```
 
-## Data Storage by UUID
+## Data Storage by Entity
 
 ### Create data
 
