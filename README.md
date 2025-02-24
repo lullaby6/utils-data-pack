@@ -153,7 +153,7 @@ $say $(lives)
 Example:
 
 ```mcfunction
-/execute as @e[type=warden,tag=!utils.bossbar.entity] run function utils:entity/bossbar/entity/load {"name":"Warden","max":500,"color":"blue","name_color":"dark_blue","style":"notched_6"}
+/execute as @e[type=warden,tag=!utils.bossbar.entity] run function utils:entity/bossbar/entity/load {"name":"Warden","max":500,"color":"blue","name_color":"dark_blue","style":"notched_6","distance":50}
 ```
 
 ## Consts
