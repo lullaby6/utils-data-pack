@@ -13,7 +13,6 @@ $data modify storage utils:bossbar bossbar.max set value $(max)
 $data modify storage utils:bossbar bossbar.name_color set value "$(name_color)"
 $data modify storage utils:bossbar bossbar.color set value "$(color)"
 $data modify storage utils:bossbar bossbar.style set value "$(style)"
-$data modify storage utils:bossbar bossbar.distance set value $(distance)
 
 function utils:entity/bossbar/add with storage utils:bossbar bossbar
 

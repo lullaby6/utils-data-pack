@@ -150,6 +150,18 @@ $say $(lives)
 
 ## Bossbars per Entity
 
+Delete bossbar:
+
+```mcfunction
+/bossbar remove utils:<id>
+```
+
+Reset bossbars storages:
+
+```mcfunction
+/function utils:entity/bossbar/reset
+```
+
 Example:
 
 ```mcfunction
