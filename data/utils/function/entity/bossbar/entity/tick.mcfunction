@@ -1,6 +1,6 @@
-$execute unless entity @a[distance=..50] run bossbar set utils:$(id) visible false
+$execute unless entity @a[distance=..$(distance)] run bossbar set utils:$(id) visible false
 
-$bossbar set utils:$(id) players @a[distance=..50]
+$bossbar set utils:$(id) players @a[distance=..$(distance)]
 
 $bossbar set utils:$(id) visible true
 

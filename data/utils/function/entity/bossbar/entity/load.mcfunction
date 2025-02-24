@@ -3,6 +3,8 @@ execute if entity @s[tag=utils.bossbar.entity] run return fail
 execute store result score @s utils.bossbar.id run scoreboard players get .id utils.bossbar.id
 scoreboard players add .id utils.bossbar.id 1
 
+$scoreboard players set @s utils.bossbar.id.distance $(distance)
+
 execute store result storage utils:bossbar bossbar.id int 1 run scoreboard players get @s utils.bossbar.id
 data modify storage utils:bossbar bossbars append from storage utils:bossbar bossbar.id
 
