@@ -1,6 +1,6 @@
 # Utils
 
-DP Version: `5`
+DP Version: `6`
 
 MC Version: `1.21.X`
 
@@ -9,6 +9,7 @@ MC Version: `1.21.X`
 - Global, Entity and Player Functions
 - Motion Entity in Facing Direction
 - Data Storage by Entity
+- Bossbars per Entity
 - Consts Scores
 - Player Score ID
 - Predicates
@@ -145,6 +146,14 @@ $say $(lives)
 # array
 /function utils:entity/storage/remove/first {"path":"deaths"}
 /function utils:entity/storage/remove/index {"path":"deaths","index":1}
+```
+
+## Bossbars per Entity
+
+Example:
+
+```mcfunction
+/execute as @e[type=warden,tag=!utils.bossbar.entity] run function utils:entity/bossbar/entity/load {"name":"Warden","max":500,"color":"blue","name_color":"dark_blue","style":"notched_6"}
 ```
 
 ## Consts

@@ -11,3 +11,5 @@ function utils:random_tp/load
 function utils:consts
 
 function utils:entity/storage/load
+
+function utils:entity/bossbar/load
