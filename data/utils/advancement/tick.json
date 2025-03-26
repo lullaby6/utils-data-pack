@@ -5,6 +5,6 @@
       }
     },
     "rewards": {
-      "function": "utils:player/id/new"
+      "function": "utils:player/id"
     }
   }

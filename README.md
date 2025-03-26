@@ -1,6 +1,6 @@
 # Utils
 
-DP Version: `6`
+DP Version: `7`
 
 MC Version: `1.21.X`
 
