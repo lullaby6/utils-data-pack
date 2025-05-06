@@ -243,8 +243,6 @@ Example:
 - enchant_randomly
 - furnace_smelt
 - glider
-- hide_additional_tooltip
-- hide_tooltip
 - non_consumable
 - one_use
 - remove_container_loot
